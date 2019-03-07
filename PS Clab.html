@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>PS Clab</title>
+        <link href="./css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/PS Clab.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Black+Han+Sans|Concert+One|Cute+Font|Do+Hyeon|Jua|Nanum+Brush+Script|Nanum+Gothic|Nanum+Myeongjo|Nanum+Pen+Script|Righteous|Song+Myung|ZCOOL+QingKe+HuangYou" rel="stylesheet"> 
+        <script src="PS Clab.js"></script>
+    </head>
+    <body>
+        <div class="text-center col-12" style="border-bottom: 1px solid gray;">
+            <h1 class="display-4">PS Clab</h1>
+            <p> Welcome to Computer Lab Booking System</p>
+        </div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-5">
+                    <div class="">
+                        <form>
+                            <div class="form-group">
+                                <label for="lib-num">도서관 번호</label>
+                                <input type="text" class="form-control" id="lib-num" placeholder="0334" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <label for="stu-name">이름</label>
+                                <input type="text" class="form-control" id="stu-name" placeholder="길동이">
+                            </div>
+                            <div class="form-group">
+                                <label for="lib-num">부</label>
+                                <select id="inputState" class="form-control">
+                                    <option value="0" selected>1부</option>
+                                    <option value="1">2부</option>
+                                    <option value="2">3부</option>
+                                </select>
+                            </div>
+                            <p class="btn btn-outline-primary" onclick="addUser()" style="margin-top:5px">제출</p>
+                        </form>
+                    </div>
+                    <div class="col-12 row btn-box">
+                        <input type="text" class="form-control maxseat" id="people" name="people" placeholder="Max Seats">
+                        <div class="col-4">
+                            <button class="btn btn-outline-primary col-12">1부 추첨하기</button>
+                        </div>
+                        <div class="col-4">
+                            <button class="btn btn-outline-primary col-12">2부 추첨하기</button>
+                        </div>
+                        <div class="col-4">
+                            <button class="btn btn-outline-primary col-12">3부 추첨하기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="row">
+                        <div class="col-4" style="text-align: center; font-size: 18px; font-family: 'Nanum Myeongjo', serif">
+                            <strong>1부</strong>
+                            <div id="l1" style="border-top: 1px solid grey;"></div>
+                        </div>
+                        <div class="col-4" style="text-align: center; font-size: 18px; font-family: 'Nanum Myeongjo', serif">
+                            <strong>2부</strong>
+                            <div id="l2" style="border-top: 1px solid grey;"></div>
+                        </div>
+                        <div class="col-4" style="text-align: center; font-size: 18px; font-family: 'Nanum Myeongjo', serif">
+                            <strong>3부</strong>
+                            <div id="l3" style="border-top: 1px solid grey;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
